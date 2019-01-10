@@ -10,7 +10,14 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
                 options: {
-                    presets: ["@babel/env"]
+                    "presets": [
+                        ["@babel/preset-env",{
+                            "targets": {
+                                "chrome": "70"
+                            }
+                        }],
+                        "@babel/preset-react"
+                    ]
                 }
             },
             {
