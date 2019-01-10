@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {hot} from 'react-hot-loader'
 import {toHTML} from './utilities.js'
 
 let App = () => {
@@ -51,4 +50,4 @@ let App = () => {
         </div>
     )
 }
-export default hot(module)(App)
+export default App
